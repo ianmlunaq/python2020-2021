@@ -33,7 +33,7 @@ def spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=1):
         turtle.home()
         spiralGlobalRep += 1
 
-        spiral(turtle, 800, 121, .99, 30)
+        #spiral(turtle, 800, 121, .99, 30)
 
 def main():
     try:
@@ -52,7 +52,7 @@ def main():
         will.home()
         will.down()
 
-        spiral(will, 800, 121, .99, 30)   # #spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=0)
+        spiral(will, 800, 90, .99, 30)   # #spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=0)
         
         window.exitonclick()
 
