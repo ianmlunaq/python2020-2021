@@ -3,12 +3,8 @@ import math
 import random
 spiralGlobalRep = 0
 
-def spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=1):
+def spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=1, red=255, grn=0, blu=0):
     global spiralGlobalRep
-
-    red = 255
-    grn = 0
-    blu = 0
 
     while spiralGlobalRep < 6:
         print('Running spiral()...')
@@ -57,7 +53,7 @@ def spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=1):
         turtle.down()
         spiralGlobalRep += 1
 
-        #spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps)
+        spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps, red, grn, blu)
 
 def main():
     try:
@@ -79,7 +75,7 @@ def main():
         will.home()
         will.down()
 
-        spiral(will, 400, 128, .98, 50)    # spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=0)
+        spiral(will, 400, 118, .98, 50)    # spiral(turtle, sideLength, angle, scaleFactor, minLength, setReps=0)
 
         """
         # turtle: turtle that you need to pass into spiral()
