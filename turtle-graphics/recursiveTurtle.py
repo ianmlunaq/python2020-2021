@@ -9,7 +9,6 @@ import random
 
 def spiral(will, sideLength, angle, scaleFactor, minLength, repCounter, red=255, grn=0, blu=0):
     
-
     if repCounter < 6:
         #print('Running spiral()...')
         reps = 0
@@ -47,9 +46,6 @@ def spiral(will, sideLength, angle, scaleFactor, minLength, repCounter, red=255,
                 blu = 255
             if blu < 0:
                 blu = 0
-
-            
-
             will.color(red, grn, blu)
             #print(will.color())
             #print(turtle.turtles())
@@ -99,14 +95,12 @@ def main():
 
         spiral(will, sideLength, randomAngle, .98, randomMinLength, repCounter)    # spiral(turtle, sideLength, angle, scaleFactor, minLength, repCounter)
 
-        
         # turtle: turtle that you need to pass into spiral()
         # sideLength: the initial side length
         # angle: angle that the will be added to turtle's heading when drawing shape (*kind of* defines the drawn shape)
         # scaleFactor: must be set to 1.0 > scaleFactor > 0.0
         # minLength: defines the point at which turtle will stop drawing; turtle will stop drawing after drawing a line equal in length to minLength
         
-
         window.update()
         print("Done!")
         
