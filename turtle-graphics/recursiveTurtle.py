@@ -11,7 +11,7 @@ def spiral(will, sideLength, angle, scaleFactor, minLength, repCounter, red=255,
     
 
     if repCounter < 6:
-        #print('Running spiral()...')
+        #print('Running spiral()...') 
         reps = 0
         forwardLength = sideLength
 
