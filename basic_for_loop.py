@@ -2,5 +2,5 @@
 
 for i in range(0, 256):
     print(i, ' ', end='')
-    if(i % 10 == 0 and i > 0):
+    if(i % 5 == 0 and i > 0):
         print()
